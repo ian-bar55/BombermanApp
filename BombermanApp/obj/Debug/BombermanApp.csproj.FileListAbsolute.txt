@@ -1,0 +1,6 @@
+C:\BombermanApp\BombermanApp\bin\Debug\BombermanApp.exe.config
+C:\BombermanApp\BombermanApp\bin\Debug\BombermanApp.exe
+C:\BombermanApp\BombermanApp\bin\Debug\BombermanApp.pdb
+C:\BombermanApp\BombermanApp\obj\Debug\BombermanApp.csprojAssemblyReference.cache
+C:\BombermanApp\BombermanApp\obj\Debug\BombermanApp.exe
+C:\BombermanApp\BombermanApp\obj\Debug\BombermanApp.pdb

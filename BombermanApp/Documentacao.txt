@@ -1,0 +1,66 @@
+﻿Olá! Seguem aqui os detalhes da implementação que fiz para solucionar o problema da prova.
+
+Arquitetura:
+
+
+-------------------------------------------------------------------------------------------
+Classe Bomb: representa uma bomba. 
+-------------------------------------------------------------------------------------------
+Construtor:
+
+=>Cria um objeto bomba a partir de uma coordenada no grid. Preferi colocar a criação de bomba nessa classe a colocar 
+na classe Bomberman, pois assim o codigo ficaria mais fácil de entender.
+
+Atributos: 
+=>int linha e int coluna, que definem em que linha e em que coluna do grid a bomba está.
+
+Métodos:
+
+=>Detonar: Detona TODAS as bombas que devem detonar ao mesmo tempo em um determinado instante. 
+O metodo detona as bombas esvaziando a linha e coluna em que a bomba esta ate encontrar um obstaculo.
+
+-------------------------------------------------------------------------------------------
+Classe Bomberman: essa classe funciona para encher o grid de bombas sempre que for preciso.
+-------------------------------------------------------------------------------------------
+Atributos:
+
+Nao possui.
+
+Métodos:
+
+=>listarBombasLate: Esse método insere em uma lista as bombas que o Bomberman usa para ENCHER O GRID.
+=> encherGridDeBombas: Esse método funciona para mudar todos espaços vazios (".") do grid em bombas("O") e retorna o novo grid.
+
+-------------------------------------------------------------------------------------------
+Classe Obstáculo:
+-------------------------------------------------------------------------------------------
+
+Construtor:
+=>Cria um objeto obstáculo a partir de uma coordenada no grid.
+
+Atributos: 
+
+=> int linha e int coluna, que definem em que linha e em que coluna do grid o obstáculo está.
+
+Métodos:
+
+Não possui.
+
+-------------------------------------------------------------------------------------------
+Classe utilitário:
+-------------------------------------------------------------------------------------------
+
+Construtor:
+
+Não possui.
+
+Atributos:
+
+Não possui.
+
+Métodos:
+
+=>validarEntrada: Verifica se os parâmetros de entrada R(linhas), C(colunas) e N(segundos) estao de acordo com as seguintes condições:
+1 <= R <= 200
+1 <= C <= 200
+1 <= N <= 1000000000
